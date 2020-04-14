@@ -1331,7 +1331,7 @@ window.WAPI.sendMessageToID = function(chatid, msgText) {
     });
     return Store.Chat.find(idUser).then((chatid) => {
         var mc = new Store.SendTextMsgToChat(chatid, msgText);
-		SetConsoleMessage("SendMessage", JSON.stringify(mc));
+		SetConsoleMessage("sendMessageToID", "Enviou");
         return true;
     });
 }
